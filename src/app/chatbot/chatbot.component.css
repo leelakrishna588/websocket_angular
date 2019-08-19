@@ -1,51 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-html,body {
-    height: 100%;
-    overflow: hidden;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.58;
-    color: #333;
-   /*  background-color: #f4f4f4; */
-    height: 100%;
-
-
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body:before {
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: 18.jpg;
-    content: "";
-    z-index: 0;
-}
-
-.clearfix:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
 
 .form-control {
     width: 100%;
@@ -109,51 +66,10 @@ button.accent {
     color: #fff;
 }
 
-#username-page {
-    text-align: center;
-}
-
-.username-page-container {
-    background: #fff;
-    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-    border-radius: 2px;
-    width: 100%;
-    max-width: 500px;
-    display: inline-block;
-    margin-top: 42px;
-    vertical-align: middle;
-    position: relative;
-    padding: 35px 55px 35px;
-    min-height: 250px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    margin-top: -160px;
-}
-
-.username-page-container .username-submit {
-    margin-top: 10px;
-}
 
 
-#chat-page {
-    position: relative;
-    height: 100%;
-}
 
-.chat-container {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-    margin-top: 30px;
-    height: calc(100% - 60px);
-    max-height: 600px;
-    position: relative;
-}
+
 
 #chat-page ul {
     list-style-type: none;
@@ -163,6 +79,11 @@ button.accent {
     overflow-y: scroll;
     padding: 0 20px 0px 20px;
     height: calc(100% - 150px);
+}
+
+#chat-page .chat-message span {
+    color: #333;
+    font-weight: 600;
 }
 
 #chat-page #messageForm {
@@ -235,6 +156,8 @@ button.accent {
     margin-left: 5px;
 }
 
+
+
 .chat-header {
     text-align: center;
     padding: 15px;
@@ -254,7 +177,6 @@ button.accent {
     top: 65px;
     width: 100%;
 }
-
 
 @media screen and (max-width: 730px) {
 
@@ -301,3 +223,10 @@ button.accent {
         font-size: 1.1em;
     }
 }
+
+
+
+
+
+
+

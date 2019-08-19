@@ -1,0 +1,19 @@
+<div id="chat-page" class="hidden">
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chat Box</h2>
+        </div>
+        <div class="connecting">Connecting...</div>
+        <ul id="messageArea">
+
+        </ul>
+        <form  [formGroup]="messageForm" id="messageForm" name="messageForm" nameForm="messageForm">
+            <div class="form-group">
+                <div class="input-group clearfix">
+                    <input type="text" id="message" placeholder="Type a message ..." autocomplete="off" class="form-control" formControlName="msg" />
+                    <button type="submit" class="primary" (click)="sendMessage()">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
